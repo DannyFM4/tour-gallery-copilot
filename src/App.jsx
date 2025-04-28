@@ -47,6 +47,9 @@ function App() {
         <button className="refresh-btn" onClick={fetchTours}>
           Refresh
         </button>
+        <footer className="footer">
+          <p>Explore the world with our curated tours!</p>
+        </footer>
       </div>
     );
   }
@@ -55,6 +58,9 @@ function App() {
     <div className="app">
       <h1>Tours</h1>
       <Gallery tours={tours} onRemove={removeTour} />
+      <footer className="footer">
+        <p>Explore the world with our curated tours!</p>
+      </footer>
     </div>
   );
 }
