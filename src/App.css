@@ -1,22 +1,23 @@
 /* General App Styling */
 #root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange children in a column */
+  min-height: 100vh; /* Ensure the app takes the full viewport height */
+  max-width: 1280px; /* Limit the maximum width */
+  margin: 0 auto; /* Center the app horizontally */
+  padding: 2rem; /* Add padding around the app */
+  text-align: center; /* Center-align text */
 }
 
 .app {
-  flex: 1;
-  font-family: Arial, sans-serif;
-  color: #333;
-  padding: 2rem;
-  text-align: center;
+  flex: 1; /* Allow the app to grow and fill available space */
+  font-family: Arial, sans-serif; /* Set font family */
+  color: #333; /* Set text color */
+  padding: 2rem; /* Add padding inside the app */
+  text-align: center; /* Center-align text */
 }
 
+/* Heading Styles */
 h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -56,107 +57,99 @@ h2 {
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
 /* Refresh Button Styling */
 .refresh-btn {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 0.8rem 1.5rem; /* Add padding */
+  font-size: 1rem; /* Set font size */
+  border-radius: 5px; /* Round corners */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
 .refresh-btn:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Darker blue on hover */
 }
 
 /* Gallery Styling */
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  gap: 2rem; /* Add space between items */
+  margin-top: 2rem; /* Add margin above the gallery */
 }
 
 /* TourCard Styling */
 .tour-card {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f9f9f9; /* Light background */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Round corners */
+  overflow: hidden; /* Clip overflowing content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
 
 .tour-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px); /* Lift card on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Add deeper shadow */
 }
 
 .tour-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+  width: 100%; /* Full width */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Maintain aspect ratio */
 }
 
 .tour-details {
-  padding: 1rem;
-  text-align: left;
+  padding: 1rem; /* Add padding inside details */
+  text-align: left; /* Align text to the left */
 }
 
 .tour-details h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem; /* Set font size for title */
+  margin-bottom: 0.5rem; /* Add space below title */
 }
 
 .tour-details p {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  color: #666;
+  font-size: 1rem; /* Set font size for text */
+  margin-bottom: 0.5rem; /* Add space below text */
+  color: #666; /* Set text color */
 }
 
 .tour-price {
-  font-weight: bold;
-  color: #007bff;
-  margin-bottom: 1rem;
+  font-weight: bold; /* Make price bold */
+  color: #007bff; /* Blue color for price */
+  margin-bottom: 1rem; /* Add space below price */
 }
 
 /* Remove Button Styling */
 .remove-btn {
-  background-color: #dc3545;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  background-color: #dc3545; /* Red background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 0.5rem 1rem; /* Add padding */
+  font-size: 1rem; /* Set font size */
+  border-radius: 5px; /* Round corners */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
 .remove-btn:hover {
-  background-color: #a71d2a;
+  background-color: #a71d2a; /* Darker red on hover */
 }
 
 /* Footer Styling */
 .footer {
-  background-color: #f1f1f1;
-  color: #555;
-  padding: 1rem 0;
-  text-align: center;
-  border-top: 1px solid #ddd;
-  font-size: 1rem;
+  background-color: #f1f1f1; /* Light gray background */
+  color: #555; /* Dark gray text */
+  padding: 1rem 0; /* Add padding */
+  text-align: center; /* Center-align text */
+  border-top: 1px solid #ddd; /* Add top border */
+  font-size: 1rem; /* Set font size */
 }
 
 .footer p {
-  margin: 0;
+  margin: 0; /* Remove margin */
 }
